@@ -1,0 +1,67 @@
+.page {
+  width: 100vw;
+  height: 1000vh;
+  font-size: "Nunito";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.page__inicial {
+  width: 21.688rem;
+}
+
+.page__inicial h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.375rem;
+  color: white;
+}
+.page__inicial h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+.page__inicial button {
+  width: 15.063rem;
+  height: 3rem;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  background: #fd377e;
+  border: 0.125rem solid #fd377e;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.page__design img {
+  width: 37.063rem;
+  height: 37.063rem;
+}
+
+@media (max-width: 770px) {
+  .page__inicial {
+    width: 80%;
+  }
+  .page__design img {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .page__inicial {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page__inicial h1 {
+    text-align: center;
+  }
+}

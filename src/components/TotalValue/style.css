@@ -1,0 +1,58 @@
+.totalMoney {
+  width: 22.688rem;
+  height: 6rem;
+  font-family: "Nunito";
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 0.063rem solid #e9ecef;
+  border-radius: 0.25rem;
+}
+
+.totalValue {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #212529;
+}
+
+.totalValue__span {
+  width: 6.25rem;
+  display: flex;
+  justify-content: flex-end;
+  color: #fd377e;
+}
+
+.descriptionValue {
+  margin: 0 0 0 1.75rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #343a40;
+}
+
+.nav__buttons_all {
+  background-color: #fd377e;
+  color: white;
+}
+
+@media (max-width: 325px) {
+  .totalMoney {
+    width: 80%;
+  }
+  .totalValue {
+    display: flex;
+    align-items: center;
+  }
+
+  .totalValue__span {
+    width: 12rem;
+  }
+
+  .descriptionValue {
+    margin: 0;
+  }
+}

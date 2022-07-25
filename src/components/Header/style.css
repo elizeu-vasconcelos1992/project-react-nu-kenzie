@@ -1,0 +1,24 @@
+.header {
+  width: 82%;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-family: "Nunito";
+  background-color: #f8f9fa;
+}
+
+.header img {
+  width: 7.625rem;
+  height: 1.25rem;
+}
+
+.header button {
+  width: 4rem;
+  height: 2.5rem;
+  cursor: pointer;
+  background: #e9ecef;
+  border: 0.088rem solid #e9ecef;
+  border-radius: 0.5rem;
+}

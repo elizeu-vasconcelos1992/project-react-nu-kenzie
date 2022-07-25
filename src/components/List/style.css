@@ -1,0 +1,168 @@
+.transactions {
+  width: 35rem;
+  font-size: "Nunito";
+  font-style: normal;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h3 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+nav .nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav button {
+  width: fit-content;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #343a40;
+  cursor: pointer;
+  padding: 0 1rem;
+  background: #e9ecef;
+  border: 0.088rem solid #e9ecef;
+  border-radius: 0.5rem;
+}
+
+.list {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}
+
+.list__transactions {
+  width: 100%;
+  height: 5.438rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+.list__transactions--tag--1 {
+  width: 0.25rem;
+  height: 100%;
+  background: #03b898;
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+}
+
+.list__transactions--tag--2 {
+  width: 0.25rem;
+  height: 100%;
+  background: rgb(211, 70, 70);
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+}
+
+.list__transactions--description {
+  width: 22rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.list__transactions--description h4 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.list__transactions--description span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #343a40;
+}
+
+.list__transactions--value {
+  display: flex;
+  align-items: center;
+}
+
+.list__transactions--value span {
+  width: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #212529;
+}
+
+.list__transactions--value figure {
+  width: 1.375rem;
+  height: 1.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9ecef;
+  border-radius: 0.156rems;
+}
+
+.list__transactions--value figure img {
+  cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  .transactions {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list {
+    width: 80%;
+  }
+
+  .list__transactions--description {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 378px) {
+  .list {
+    width: 85%;
+  }
+
+  .list__transactions--description {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .list {
+    width: 95%;
+  }
+
+  .list__transactions--description {
+    width: 8rem;
+  }
+
+  .list__transactions--value figure {
+    margin: 0 1.5rem;
+  }
+}

@@ -1,0 +1,116 @@
+form {
+  width: 22.688rem;
+  height: 21.93rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  background: #ffffff;
+  border: 0.063rem solid #e9ecef;
+  border-radius: 0.25rem;
+}
+
+form label {
+  width: 19.625rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  color: #212529;
+  gap: 0.5rem;
+}
+
+form label input {
+  height: 3.3rem;
+  padding: 0rem 1rem;
+  background: #f8f9fa;
+  border: 0.125rem solid #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+form label span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #868e96;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+
+form div label {
+  width: 8rem;
+}
+
+form div input {
+  height: 3rem;
+  overflow: hidden;
+  background: #f8f9fa;
+  border: 0.125rem solid #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+form div input::placeholder {
+  text-align: end;
+}
+
+form div select {
+  width: 8rem;
+  height: 3rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  background: #f8f9fa;
+  border: 0.125rem solid #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+form div select option {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #343a40;
+}
+
+form button {
+  width: 19.625rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+@media (max-width: 325px) {
+  form {
+    width: 80%;
+  }
+
+  form button {
+    width: 80%;
+  }
+
+  form label {
+    width: 80%;
+  }
+
+  form div {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  form div label {
+    width: 80%;
+  }
+
+  form div select {
+    width: 100%;
+  }
+}
