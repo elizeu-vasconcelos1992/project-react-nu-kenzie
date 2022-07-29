@@ -34,11 +34,6 @@
   color: #343a40;
 }
 
-.nav__buttons_all {
-  background-color: #fd377e;
-  color: white;
-}
-
 @media (max-width: 325px) {
   .totalMoney {
     width: 80%;

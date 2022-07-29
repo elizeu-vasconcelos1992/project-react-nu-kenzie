@@ -1,5 +1,5 @@
 .header {
-  width: 82%;
+  width: 75%;
   height: 5.5rem;
   display: flex;
   align-items: center;
@@ -21,4 +21,10 @@
   background: #e9ecef;
   border: 0.088rem solid #e9ecef;
   border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.header button:hover {
+  background-color: #fd377e;
+  color: white;
 }

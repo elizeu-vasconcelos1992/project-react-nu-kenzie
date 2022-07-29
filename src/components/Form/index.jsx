@@ -5,13 +5,17 @@ function Form({ transactions, setTransactions }) {
   const [inputDescription, setInputDescription] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [selectType, setSelectType] = useState("Entrada");
+  const [count, setCount] = useState(0);
 
   const inputTransactions = () => {
-    return {
+    const info = {
       description: inputDescription,
       type: selectType,
       value: inputValue,
+      id: count,
     };
+    setCount(count + 1);
+    return info;
   };
 
   return (
@@ -48,7 +52,9 @@ function Form({ transactions, setTransactions }) {
       </div>
       <button
         type="submit"
-        onClick={() => setTransactions([...transactions, inputTransactions()])}
+        onClick={() => {
+          setTransactions([...transactions, inputTransactions()]);
+        }}
       >
         Inserir Valor
       </button>

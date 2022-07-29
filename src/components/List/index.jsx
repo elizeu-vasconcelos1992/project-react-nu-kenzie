@@ -1,36 +1,14 @@
 import "./style.css";
 import trash from "../../assets/trash.svg";
 import card from "../../assets/NoCard.svg";
-import { useState } from "react";
 
-function List({ listTransactions, remove }) {
-  const [listEntree, setListEntree] = useState([]);
-  const [listExpense, setListExpense] = useState([]);
-  const [validation, setValidation] = useState("all");
-
-  function filterEntree() {
-    const newEntree = listTransactions.filter(
-      (item) => item.type === "Entrada"
-    );
-    setListEntree([...newEntree]);
-    setValidation("entree");
-  }
-
-  function filterExpense() {
-    const newExpense = listTransactions.filter((item) => item.type === "Saída");
-    setListExpense([...newExpense]);
-    setValidation("expense");
-  }
-
+function List({ listTransactions, remove, validation, setValidation, list }) {
   function listAll() {
     if (validation === "all") {
       return listMap(listTransactions);
     }
-    if (validation === "entree") {
-      return listMap(listEntree);
-    }
-    if (validation === "expense") {
-      return listMap(listExpense);
+    if (validation !== "all") {
+      return listMap(list);
     }
   }
 
@@ -58,12 +36,8 @@ function List({ listTransactions, remove }) {
             <img
               src={trash}
               alt="lixo"
-              onClick={(event) =>
-                remove(
-                  event.target.parentElement.parentElement.parentElement
-                    .childNodes[1].firstChild.innerText
-                )
-              }
+              id={item.id}
+              onClick={(event) => remove(event.target.id)}
             />
           </figure>
         </div>
@@ -76,21 +50,21 @@ function List({ listTransactions, remove }) {
       <nav>
         <h3>Resumo Financeiro</h3>
         <div className="nav__buttons">
-          <button
-            className="nav__buttons_all"
-            onClick={() => setValidation("all")}
-          >
-            Todos
-          </button>
-          <button onClick={() => filterEntree()}>Entrada</button>
-          <button onClick={() => filterExpense()}>Despesas</button>
+          <button onClick={() => setValidation("all")}>Todos</button>
+          <button onClick={() => setValidation("Entrada")}>Entrada</button>
+          <button onClick={() => setValidation("Saída")}>Despesas</button>
         </div>
       </nav>
       <ul className="list">
-        {listTransactions.length > 0 ? (
+        {(listTransactions.length > 0 && validation === "all") ||
+        (list.length > 0 && validation === "Entrada") ||
+        (list.length > 0 && validation === "Saída") ? (
           listAll()
         ) : (
-          <img src={card} alt="card vazio" />
+          <>
+            <h3>Você ainda não possui nenhum lançamento</h3>
+            <img src={card} alt="card vazio" />
+          </>
         )}
       </ul>
     </div>
