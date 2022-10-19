@@ -23,8 +23,8 @@
 
 <ul>
 <li>JAVASCRIPT</li>
-<li>HTML</li>
-<li>CCS</li>
+<li>HTML5</li>
+<li>CCS3</li>
 <li>REACT</li>
 <li>HOOKS</li>
 </ul><br>
