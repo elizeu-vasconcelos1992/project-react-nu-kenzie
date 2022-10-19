@@ -5,7 +5,7 @@
 </div>
 <br>
 
-<p style="text-align:justify">A Nu Kenzie é uma aplicação em React para controle de finanças. O usuário pode inserir valores de entrada e saída, consultar o saldo, verificar o histórico e excluí-lo. A aplicação realiza filtros de acordo com o tipo de entrada e mostra se o saldo atual é positivo ou negativo. Aplicação responsiva.</p><br>
+<p style="text-align:justify">A Nu Kenzie é uma aplicação em React para controle de finanças. O usuário pode inserir valores de entrada e saída, consultar o saldo, verificar o histórico e excluí-lo. A aplicação realiza filtros de acordo com o tipo de entrada e mostra se o saldo atual é positivo ou negativo.</p><br>
 
 <h1>🔨 RECURSOS</h1>
 
@@ -16,6 +16,7 @@
 <li><strong>Exclusão:</strong> o usuário pode excluir quaisquer entradas ou saídas.</li>
 <li><strong>Saldo:</strong> o saldo é contabilizado automaticamente.</li>
 <li><strong>Sair:</strong> o usuário pode retornar para a página inicial</li>
+<li><strong>Aplicação responsiva.</strong></li>
 
 </ul><br>
 
